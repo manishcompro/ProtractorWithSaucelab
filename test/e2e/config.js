@@ -1,5 +1,5 @@
 var HtmlReporter = require('protractor-html-screenshot-reporter');
-var jasmineReporters = require('C:/Users/Manish/AppData/Roaming/npm/node_modules/jasmine-reporters');
+// var jasmineReporters = require('C:/Users/Manish/AppData/Roaming/npm/node_modules/jasmine-reporters');
 var path = require('path');
 // A reference configuration file.
 exports.config = {
@@ -75,10 +75,10 @@ exports.config = {
                 return path.join(totalDateString,capabilities.caps_.browserName, descriptions.join('-'));
             }
         }));
-		 require('jasmine-reporters');
-            jasmine.getEnv().addReporter(
-                new jasmine.JUnitXmlReporter('xmloutput1', true, true)
-            );
+	//	 require('jasmine-reporters');
+       //     jasmine.getEnv().addReporter(
+       //         new jasmine.JUnitXmlReporter('xmloutput1', true, true)
+       //     );
 		
 		
     },
