@@ -1,4 +1,5 @@
 var HtmlReporter = require('protractor-html-screenshot-reporter');
+var jasmineReporters = require('jasmine-reporters');
 var path = require('path');
 // A reference configuration file.
 exports.config = {
@@ -74,6 +75,12 @@ exports.config = {
                 return path.join(totalDateString,capabilities.caps_.browserName, descriptions.join('-'));
             }
         }));
+		 require('jasmine-reporters');
+            jasmine.getEnv().addReporter(
+                new jasmine.JUnitXmlReporter('xmloutput1', true, true)
+            );
+		
+		
     },
 // ----- Options to be passed to minijasminenode -----
     jasmineNodeOpts: {
