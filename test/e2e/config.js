@@ -1,5 +1,5 @@
 var HtmlReporter = require('protractor-html-screenshot-reporter');
-var jasmineReporters = require('jasmine-reporters');
+var jasmineReporters = require('C:/Users/Manish/AppData/Roaming/npm/node_modules/jasmine-reporters');
 var path = require('path');
 // A reference configuration file.
 exports.config = {
